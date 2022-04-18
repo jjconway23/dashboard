@@ -4,6 +4,9 @@ async function getBackground(){
     const data = await response.json()
     console.log(data.urls.full)
     document.body.style.backgroundImage = `url(${data.urls.regular})`
-
+    document.getElementById("author").innerHTML = 
+    `
+        By: ${data.user.name}
+    `
 }
 getBackground()
