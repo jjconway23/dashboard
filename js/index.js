@@ -5,12 +5,11 @@ async function getBackground(){
     }
     try{
         const data = await response.json()
-    console.log(data.urls.full)
-    document.body.style.backgroundImage = `url(${data.urls.regular})`
-    document.getElementById("author").innerText = 
-    `
-        By: ${data.user.name}
-    `
+        document.body.style.backgroundImage = `url(${data.urls.regular})`
+        document.getElementById("author").innerText = 
+            `
+                By: ${data.user.name}
+            `
     }
     catch(error){
         console.error(error)
