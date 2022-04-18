@@ -1,4 +1,4 @@
-export function getTime(){
+export const getTime =  () => {
     const date = new Date()
-    document.getElementById("time").innerText= d.toLocaleString("en-GB",{timeStyle:"short"})        
+    document.getElementById("time").innerText= date.toLocaleString("en-GB",{timeStyle:"medium"})        
 }
