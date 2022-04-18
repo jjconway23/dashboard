@@ -10,9 +10,26 @@ html,*{
 .flex{
     display: flex;
 }
-/* Main Content */
 body{
     flex-direction:column;
     justify-content: space-between;
     height: 100vh;
+    font-size: 1.6rem;
+}
+/* Header */
+.top-content{
+    justify-content: space-between;
+
+}
+/* Main */
+#time{
+    text-align: center;
+    font-size: 5rem;
+    /* margin-bottom: 2rem; */
+}
+/* Footer */
+#author{
+    font-size: 1.8rem;
+    /* margin-bottom: 2rem; */
+    margin-left: 1rem;
 }
