@@ -19,5 +19,11 @@ async function getBackground(){
     }
     
 }
+navigator.geolocation.getCurrentPosition( position => {
+    fetch(`http://api.weatherapi.com/v1/current.json?key=0e3c39bf948e440386b210920222004&q=${position.coords.latitude}&q=${position.coords.longitude}&aqi=yes`)
+        .then(res => res.json())
+        .then(data => console.log(data))
+    console.log(position.coords.latitude)
+})
 getBackground()
 setInterval(getTime,1000)
