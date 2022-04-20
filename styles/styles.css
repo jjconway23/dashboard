@@ -28,6 +28,19 @@ body{
     justify-content: space-between;
 
 }
+#weather{
+    margin-right: 1rem;
+    flex-wrap: wrap;
+}
+#temp{
+    font-size: 4rem;
+}
+#city{
+    font-size: 3rem;
+    width: 100%;
+    text-transform: uppercase;
+    margin-right: -7rem;
+}
 /* Main */
 #time{
     text-align: center;

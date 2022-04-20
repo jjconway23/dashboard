@@ -23,7 +23,7 @@ navigator.geolocation.getCurrentPosition( position => {
     fetch(`http://api.weatherapi.com/v1/current.json?key=0e3c39bf948e440386b210920222004&q=${position.coords.latitude}&q=${position.coords.longitude}&aqi=yes`)
         .then(res => res.json())
         .then(data => {
-            document.getElementById("temp").innerText = data.current.temp_c
+            document.getElementById("temp").innerText = `${data.current.temp_c}℃`
             document.getElementById("city").innerText = data.location.name
         })
 })
