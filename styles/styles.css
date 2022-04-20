@@ -20,6 +20,8 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    color: white;
+    text-shadow: 2px 2px 2px #3692F8;
 }
 /* Header */
 .top-content{
